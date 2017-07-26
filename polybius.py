@@ -18,6 +18,7 @@ class Polybius(Cipher):
         output = []
         text = text.upper()
         for char in text:
+            #since J has been removed from alphabet, replace it in the text with I.
             if char == "J":
               char = "I"
             try:
