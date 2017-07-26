@@ -14,8 +14,7 @@ class Polybius(Cipher):
         self.alphabet = string.ascii_uppercase.replace("J", '')
 
     def encrypt(self, text):
-        """Takes text and encrypts it according to the Polybius method.
-        """
+        """Takes text and encrypts it according to the Polybius method."""
         output = []
         text = text.upper()
         for char in text:
@@ -32,8 +31,7 @@ class Polybius(Cipher):
         return ''.join(output)
 
     def decrypt(self, text):
-        """Takes text and decrypts it according to the Polybius method.
-        """
+        """Takes text and decrypts it according to the Polybius method."""
         output = []
         text = text.strip()
         while len(text):
