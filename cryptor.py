@@ -53,8 +53,7 @@ def crypt():
             'encrypt' if mode.lower() == 'e'
             else 'decrypt', 
             method.encrypt(text) if mode.lower() == 'e'
-            else method.decrypt(text))
-          )
+            else method.decrypt(text)))
  
  
 #run crypt and allow user to repeat process   
