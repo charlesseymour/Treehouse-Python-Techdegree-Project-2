@@ -12,8 +12,7 @@ class Atbash(Cipher):
         self.alphabet = string.ascii_uppercase
 
     def encrypt(self, text):
-        """Takes text and encrypts it according to the Atbash method.
-        """
+        """Takes text and encrypts it according to the Atbash method."""
         output = []
         text = text.upper()
         for char in text:
@@ -26,8 +25,7 @@ class Atbash(Cipher):
         return ''.join(output)
 
     def decrypt(self, text):
-        """Takes text and decrypts it according to the Atbash method.
-        """
+        """Takes text and decrypts it according to the Atbash method."""
         #Atbash merely switches letter positions so encrypt and decrypt
         #methods are the same
         return self.encrypt(text)
