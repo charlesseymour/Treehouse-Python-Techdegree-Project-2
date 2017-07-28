@@ -1,6 +1,5 @@
 import sys
 
-from caesar import Caesar
 from atbash import Atbash
 from polybius import Polybius
 from transposition import Transposition
